@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens e castelos de Game Of Thrones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <ul class="botoes">
+        <li>
+            <button class="botao jonsnow selecionado">
+                <img src="./src/imagens/Jonsnow-icon.png" alt="Icone Jonsnow">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao daenerys">
+                <img src="./src/imagens/Daenerys-icon.png" alt="Icone Daenerys">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao tyrion">
+                <img src="./src/imagens/Tyrion-icon.png" alt="Icone Tyrion">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao stannis">
+                <img src="./src/imagens/Stannis-icon.png" alt="Icon Stannis">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao theon">
+                <img src="./src/imagens/Theon-icon.png" alt="Icon Theon">
+            </button>
+        </li>
+    </ul>
+
+    <main class="personagens">
+        <div class="personagem selecionado">
+            <picture>
+                <source srcset="src\imagens\Jonsnow.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/Jonsnow-mobile.png" alt="Personagem Jonsnow" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">🐺 Jon Snow em Winterfell</h2>
+                <p class="descricao">Jon Snow, filho bastardo de Eddard Stark (ou assim se acreditava), cresceu em
+                    Winterfell à sombra de sua família nobre. Sua jornada é marcada por honra, sacrifício e revelações
+                    chocantes sobre sua verdadeira origem. De um simples membro da Patrulha da Noite, ele se torna uma
+                    figura central na luta contra os Caminhantes Brancos.
+                </p>
+                <p class="descricao">
+                    Winterfell é o coração do Norte — uma fortaleza ancestral feita de pedra escura e cercada por
+                    florestas nevadas. Suas criptas escondem os antigos reis do Norte e seu lobo gigante simboliza a
+                    força e a resiliência dos Stark.
+                </p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <picture>
+                <source srcset="src\imagens\Daenerys.png" media="(min-width: 768px)">
+                <img class="imagem" src="./src/imagens/Daenerys-mobile.png" alt="Personagem Daenerys">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">🐉 Daenerys Targaryen em Dragonstone</h2>
+                <p class="descricao">A última sobrevivente conhecida da dinastia Targaryen no início da série, Daenerys
+                    parte do exílio
+                    para conquistar reinos e libertar escravos. Com seus dragões, ela resgata a glória perdida da sua
+                    casa, enfrentando dilemas morais e políticos no caminho ao Trono de Ferro.
+                </p>
+                <p class="descricao">
+                    Dragonstone é uma fortaleza sombria e vulcânica, esculpida nas pedras por antigos mestres de
+                    Valíria. Localizada em uma ilha rochosa, é o berço dos Targaryen em Westeros, cercada por mares
+                    turbulentos e dragões esculpidos nas muralhas.
+                </p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <picture>
+                <source srcset="src\imagens\Tyrion.png" media="(min-width: 768px)">
+                <img class="imagem" src="./src/imagens/Tyrion-mobile.png" alt="Personagem Tyrion">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">🦁 Tyrion Lannister em Rochedo Casterly</h2>
+                <p class="descricao">Tyrion, o anão brilhante e sarcástico dos Lannister, usa sua inteligência como arma
+                    num mundo que o
+                    despreza por sua aparência. Apesar do desprezo do pai, ele se torna Mão do Rei e peça-chave na
+                    guerra e na reconstrução dos Sete Reinos.
+                </p>
+                <p class="descricao">
+                    Rochedo Casterly é uma imensa fortaleza escavada na pedra, com vista para o mar. Rico em ouro e
+                    história, é o símbolo do poder e riqueza da Casa Lannister, construída sobre minas que sustentaram a
+                    dinastia por gerações.
+                </p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <picture>
+                <source srcset="src\imagens\Stannis.png" media="(min-width: 768px)">
+                <img class="imagem" src="./src/imagens/Stannis-mobile.png" alt="Personagem Stannis">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">🔥 Stannis Baratheon em Dragonstone</h2>
+                <p class="descricao">Stannis é o irmão rígido e inflexível de Robert Baratheon. Determinado a
+                    reivindicar o trono por
+                    direito, ele se alia à sacerdotisa vermelha Melisandre, mergulhando em magia sombria e decisões
+                    implacáveis. Seu senso de dever supera até o amor por sua família.
+                </p>
+                <p class="descricao">
+                    Dragonstone, também lar temporário de Stannis, carrega a aura ancestral dos Targaryen. Com seu clima
+                    tempestuoso e arquitetura esculpida em dragões, é uma base poderosa para qualquer aspirante ao
+                    trono.
+                </p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <picture>
+                <source srcset="src\imagens\Theon.png" media="(min-width: 768px)">
+                <img class="imagem" src="./src/imagens/Theon-mobile.png" alt="Personagem Theon">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">🐙 Theon Greyjoy em Pyke</h2>
+                <p class="descricao">Criado como refém em Winterfell, Theon vive entre duas identidades: Stark e
+                    Greyjoy. Sua jornada é marcada por traições, arrependimentos e uma longa busca por redenção após ser
+                    capturado e torturado
+                    por Ramsay Bolton.</p>
+                <p class="descricao">
+                    Pyke é um castelo sombrio, dilacerado por tempestades e construído em ilhotas de pedra conectadas
+                    por pontes de corda. Localizado nas Ilhas de Ferro, representa a cultura marítima e guerreira dos
+                    Greyjoy: dura, fria e impiedosa.</p>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

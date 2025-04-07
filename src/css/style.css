@@ -1,0 +1,160 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+main::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vh;
+    background: linear-gradient(92deg,
+            #0a0f2c 0%,
+            #141b34 25%,
+            rgba(20, 27, 52, 0.7) 45%,
+            rgba(0, 0, 0, 0) 80%) no-repeat;
+    z-index: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: relative;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 380px;
+    line-height: 1.6;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-family: "MedievalSharp", serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.conteudo .descricao {
+    text-align: center;
+    color: #fff;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    white-space: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.botoes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100vh;
+    background: rgba(20, 27, 52, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(20, 27, 52, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.botoes li {
+    list-style: none;
+}
+
+.botoes .botao {
+    border: none;
+    background: none;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes .botao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: 0.3s ease;
+}
+
+.botoes .botao:hover img {
+    transform: scale(1.1);
+    border-color: #ffcc00;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #d9d9d9;
+}
+
+.botoes .botao.jonsnow.selecionado {
+    box-shadow: 0 0 10px #d9d9d9;
+}
+
+.botoes .botao.daenerys.selecionado {
+    box-shadow: 0 0 10px #ff6b6b;
+}
+
+.botoes .botao.tyrion.selecionado {
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.botoes .botao.stannis.selecionado {
+    box-shadow: 0 0 10px #ff9347;
+}
+
+.botoes .botao.theon.selecionado {
+    box-shadow: 0 0 10px #5fa8d3;
+}
