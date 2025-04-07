@@ -13,7 +13,7 @@ main::after {
     width: 80vh;
     background: linear-gradient(92deg,
             #0a0f2c 0%,
-            #141b34 25%,
+            #141b34 1%,
             rgba(20, 27, 52, 0.7) 45%,
             rgba(0, 0, 0, 0) 80%) no-repeat;
     z-index: 0;
